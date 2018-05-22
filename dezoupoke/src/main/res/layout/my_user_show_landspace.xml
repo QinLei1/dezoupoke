@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_brown_8"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+    <ImageView
+        android:id="@+id/img_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/niuniu_people_header" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_grade"
+            style="@style/mystyle_for_show_tv"
+            android:gravity="center"
+            android:text="lv13" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/mystyle_for_show_tv"
+            android:gravity="center"
+
+            android:text="aab123456" />
+
+        <TextView
+            android:id="@+id/tv_gold_num"
+            style="@style/mystyle_for_show_tv"
+            android:drawableLeft="@drawable/niuniu_people_jinbi"
+            android:gravity="center_vertical"
+
+            android:text="16530" />
+
+    </LinearLayout>
+</LinearLayout>

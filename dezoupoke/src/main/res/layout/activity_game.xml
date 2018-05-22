@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3"
+    android:padding="16dp"
+    tools:context="com.luosu.activitys.GameActivity">
+
+
+    <GridView
+        android:id="@+id/gride_all"
+        android:layout_width="340dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:numColumns="5" />
+
+    <ImageView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gride_all"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/gride_all"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+
+        android:src="@drawable/dizhu" />
+
+    <ImageView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/gride_all"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/gride_all"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:src="@drawable/dizhu" />
+
+    <ImageView
+        android:id="@+id/player4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/dizhu" />
+
+    <ImageView
+        android:id="@+id/player5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/player1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/player1"
+        android:src="@drawable/dizhu" />
+
+    <ImageView
+        android:id="@+id/player6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dizhu" />
+
+    <ImageView
+        android:id="@+id/player7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/player2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/player2"
+        android:src="@drawable/dizhu_gril" />
+
+    <ImageView
+        android:id="@+id/player1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/player1"
+        android:layout_toRightOf="@+id/player1"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/player1_1"
+        android:layout_toRightOf="@+id/player1_1"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/player2"
+        android:layout_toStartOf="@+id/player2"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/player2_1"
+        android:layout_toStartOf="@+id/player2_1"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/player3"
+        android:layout_toRightOf="@+id/player3"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/player3_1"
+        android:layout_toEndOf="@+id/player3_1"
+        android:layout_toRightOf="@+id/player3_1"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player4_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/player4"
+        android:layout_toStartOf="@+id/player4"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player4_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/player4_1"
+        android:layout_toLeftOf="@+id/player4_1"
+        android:layout_toStartOf="@+id/player4_1"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player5_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/player5"
+        android:layout_toStartOf="@+id/player5"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player5_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/player5_1"
+        android:layout_toLeftOf="@+id/player5_1"
+        android:layout_toStartOf="@+id/player5_1"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player6_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/player6"
+        android:layout_toRightOf="@+id/player6"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player6_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/player6_1"
+        android:layout_toRightOf="@+id/player6_1"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player7_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/player7"
+        android:layout_toRightOf="@+id/player7"
+        android:src="@drawable/paibackground" />
+
+    <ImageView
+        android:id="@+id/player7_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/gride_all"
+        android:layout_toRightOf="@+id/gride_all"
+        android:src="@drawable/paibackground" />
+
+    <Button
+        android:text="开牌"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btn_open" />
+
+    <ImageView
+        android:id="@+id/player3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dizhu"
+        android:layout_alignTop="@+id/player4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

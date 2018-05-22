@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shape_white"
+    tools:context="com.luosu.activitys.LoginActivity">
+    <LinearLayout
+        android:layout_width="240.0dip"
+        android:layout_centerInParent="true"
+        android:layout_height="240.0dip"
+        android:background="@drawable/shape_white_8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/uk_graywordhead_by_ui"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/input"
+            android:layout_width="192.0dip"
+            android:layout_height="204.0dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/uk_rela_user"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/uk_edit_height"
+                android:layout_marginTop="9.6dip"
+                android:background="@drawable/uk_shape_gray_shallow_edittext_12dp" >
+
+                <ImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:src="@drawable/uk_user_by_ui" />
+
+                <EditText
+                    android:id="@+id/edit_user"
+                    android:layout_width="160dip"
+                    android:layout_height="24dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dip"
+                    android:layout_toRightOf="@id/user_icon"
+                    android:background="@null"
+                    android:digits="@string/uk_xianzhi"
+                    android:gravity="center_vertical"
+                    android:hint="@string/uk_modify_user"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textColor="@color/uk_black"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/uk_rela_psd"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/uk_edit_height"
+                android:layout_marginTop="9.6dp"
+                android:background="@drawable/uk_shape_gray_shallow_edittext_12dp" >
+
+                <ImageView
+                    android:id="@+id/pwd_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:src="@drawable/uk_psd_by_ui" />
+
+                <EditText
+                    android:id="@+id/edit_pwd"
+                    android:layout_width="126dip"
+                    android:layout_height="24dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dip"
+                    android:layout_toRightOf="@id/pwd_icon"
+                    android:background="@null"
+                    android:digits="@string/uk_xianzhi"
+                    android:gravity="center_vertical"
+                    android:hint="@string/uk_register_pwd"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textColor="@color/uk_black"
+                    android:textSize="15.0sp" />
+                <CheckBox
+                    android:id="@+id/check_psd_see"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/uk_selector_checkbox_psd_"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/uk_edit_height"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/uk_shape_red_by_ui_24"
+                android:gravity="center"
+                android:text="@string/uk_register_button"
+                android:textColor="@color/textwhite" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

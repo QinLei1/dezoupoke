@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myattrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_niu_more_people"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/niuniu_people"
+
+    tools:context="com.luosu.activitys.NiuMorePeopleActivity">
+
+
+    <com.luosu.views.MyUsersShow
+        android:id="@+id/player_myshelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        myattrs:isvertical="false" />
+
+    <!-- 用于判定加数字的-->
+    <LinearLayout
+        android:id="@+id/linear_numbers_sum"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp"
+        android:background="@drawable/bg_add"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/tv_num1"
+            style="@style/mystyle_for_number_tv"
+            android:text=""
+
+            />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/icon_add" />
+
+        <TextView
+            android:id="@+id/tv_num2"
+            style="@style/mystyle_for_number_tv"
+            android:text=" "
+
+            />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/icon_add" />
+
+        <TextView
+            android:id="@+id/tv_num3"
+            style="@style/mystyle_for_number_tv"
+            android:text=" "
+
+            />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/icon_equal" />
+
+        <TextView
+            android:id="@+id/tv_num4"
+            style="@style/mystyle_for_number_tv"
+            android:text=" "
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/frame_player"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/frame_player"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_niu"
+            android:layout_width="70dp"
+
+            android:layout_height="wrap_content"
+            android:text="有牛" />
+
+        <Button
+            android:id="@+id/btn_noniu"
+
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="无牛" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/frame_player"
+        android:layout_toRightOf="@+id/frame_player"
+        android:text="开始" />
+
+    <com.luosu.views.MyUsersShow
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/player4"
+        android:visibility="invisible"
+        myattrs:isvertical="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/player1"
+        android:id="@+id/relativeLayout">
+
+        <com.luosu.views.MyPai
+            android:id="@+id/mypai_player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"></com.luosu.views.MyPai>
+
+        <ImageView
+            android:id="@+id/img_player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/ico_bull_n0"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <com.luosu.views.MyUsersShow
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginLeft="120dp"
+        android:visibility="invisible"
+        myattrs:isvertical="false" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player2"
+        android:layout_marginLeft="120dp">
+
+
+        <com.luosu.views.MyPai
+            android:id="@+id/mypai_player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"></com.luosu.views.MyPai>
+
+        <ImageView
+            android:id="@+id/img_player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ico_bull_n0"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <com.luosu.views.MyUsersShow
+        android:id="@+id/player3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="120dp"
+
+        android:visibility="invisible"
+
+        myattrs:isvertical="false" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/player2"
+        android:layout_marginRight="120dp">
+
+
+        <com.luosu.views.MyPai
+            android:id="@+id/mypai_player3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"></com.luosu.views.MyPai>
+
+        <ImageView
+            android:id="@+id/img_player3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ico_bull_n0"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <com.luosu.views.MyUsersShow
+        android:id="@+id/player4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:visibility="invisible"
+        myattrs:isvertical="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/player4">
+
+
+        <com.luosu.views.MyPai
+            android:id="@+id/mypai_player4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"></com.luosu.views.MyPai>
+
+        <ImageView
+            android:id="@+id/img_player4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ico_bull_n0"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/daojishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/lizuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出" />
+
+    <FrameLayout
+        android:id="@+id/frame_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/player_myshelf"
+        android:layout_toRightOf="@+id/player_myshelf">
+
+        <LinearLayout
+            android:id="@+id/linear_player_myshelf_pais"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img_pai1"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fang1"
+                android:tag="0"
+
+                />
+
+            <ImageView
+                android:id="@+id/img_pai2"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fang1"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/img_pai3"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fang1"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/img_pai4"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fang1"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/img_pai5"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fang1"
+                android:tag="0" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_niuji_shelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ico_bull_n0"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+
+    <!-- 庄家图画，用于选庄      -->
+    <ImageView
+        android:id="@+id/img_zhuangjia"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_zhuangjia"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

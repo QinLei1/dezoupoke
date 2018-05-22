@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textwhite">#FFFFFF</color>
+    <color name="shape_white">#FFFFFF</color>
+    <color name="uk_graywordhead_by_ui">#6f6f6f</color>
+    <color name="uk_black">#ff000000</color>
+    <color name="red_by_ui">#ff6868</color>
+    <color name="uk_graystroke_by_ui">#eaeaea</color>
+    <color name="uk_graydown_by_ui">#f7f7f7</color>
+    <color name="show_sold_qian">#764e57</color>
+    <color name="show_storeke_shen">#25181b</color>
+    <color name="yellow">#f4c405</color>
+
+
+</resources>

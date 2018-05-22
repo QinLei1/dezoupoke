@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_niu_niu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3"
+
+    android:padding="16dp"
+    tools:context="com.luosu.activitys.NiuNiuActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.luosu.views.MyPai
+                android:id="@+id/mypai_player1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"></com.luosu.views.MyPai>
+
+            <ImageView
+                android:id="@+id/img_player1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.luosu.views.MyPai
+                android:id="@+id/mypai_player2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"></com.luosu.views.MyPai>
+
+            <ImageView
+                android:id="@+id/img_player2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.luosu.views.MyPai
+                android:id="@+id/mypai_player3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"></com.luosu.views.MyPai>
+
+            <ImageView
+                android:id="@+id/img_player3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/img_xinxin"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_popbull_xinxin" />
+
+        <LinearLayout
+            android:id="@+id/linear_xinxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_popbull_betbg"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_style"
+                android:text="星星 x 3" />
+
+            <TextView
+                android:id="@+id/tv_xinxin_all"
+                style="@style/text_style_jinbi"
+                />
+
+            <TextView
+                android:id="@+id/tv_xinxin_mine"
+                style="@style/text_style_jinbi" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_qiuqiu"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_popbull_qiuqiu" />
+
+        <LinearLayout
+            android:id="@+id/linear_qiuqiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_popbull_betbg"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_style"
+                android:text="球球 x 3" />
+
+            <TextView
+                android:id="@+id/tv_qiuqiu_all"
+
+                style="@style/text_style_jinbi" />
+
+            <TextView
+                android:id="@+id/tv_qiuqiu_mine"
+                style="@style/text_style_jinbi" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_zaizai"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_popbull_zaizai" />
+
+        <LinearLayout
+            android:id="@+id/linear_zaizai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_popbull_betbg"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_style"
+                android:text="仔仔 x 3" />
+
+            <TextView
+                android:id="@+id/tv_zaizai_all"
+
+                style="@style/text_style_jinbi" />
+
+            <TextView
+                android:id="@+id/tv_zaizai_mine"
+                style="@style/text_style_jinbi" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_startgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="重新开始" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="德州扑克" />
+    <Button
+        android:id="@+id/btn_add_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:text="给自己加100" />
+    <Button
+        android:id="@+id/btn_goto_socket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/btn"
+
+        android:text="开始socket" />
+    <TextView
+        android:id="@+id/tv_gold_mine"
+        android:layout_marginBottom="15dp"
+
+        android:text="我的金币：400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btn"
+        android:layout_toStartOf="@+id/btn" />
+</RelativeLayout>

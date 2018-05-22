@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="mystyle" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></style>
+
+
+    <style name="text_style">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+    </style>
+
+    <style name="text_style_jinbi">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:drawableLeft">@drawable/dianzan2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:textColor">@color/textwhite</item>
+        <item name="android:textSize">8sp</item>
+
+        <item name="android:visibility">invisible</item>
+
+    </style>
+
+
+    <style name="mystyle_for_show_tv">
+
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/show_textsize</item>
+        <item name="android:textColor">@color/yellow</item>
+
+    </style>
+
+
+    <style name="mystyle_for_number_tv">
+
+
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:background">@drawable/bg_number</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+
+    </style>
+</resources>

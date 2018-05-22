@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pai1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paibackground_niuniu" />
+
+    <ImageView
+        android:id="@+id/pai2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+
+        android:src="@drawable/paibackground_niuniu" />
+
+    <ImageView
+        android:id="@+id/pai3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+
+        android:src="@drawable/paibackground_niuniu" />
+
+    <ImageView
+        android:id="@+id/pai4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+
+        android:src="@drawable/paibackground_niuniu" />
+
+    <ImageView
+        android:id="@+id/pai5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+
+        android:src="@drawable/paibackground_niuniu" />
+
+
+</FrameLayout>

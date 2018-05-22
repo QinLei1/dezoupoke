@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="taost_wait">请等待这句结束</string>
+    <string name="uk_xianzhi">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_</string>
+    <string name="uk_register_pwd">请输入密码</string>
+    <string name="uk_login_button">登录</string>
+    <string name="uk_register_button">注册</string>
+    <string name="uk_modify_user">用户名</string>
+
+</resources>

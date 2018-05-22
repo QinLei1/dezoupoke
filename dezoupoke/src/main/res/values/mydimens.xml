@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shape_connor">8dp</dimen>
+    <dimen name="uk_edit_height">40dp</dimen>
+    <dimen name="uk_edittext_cornor">4dp</dimen>
+
+</resources>
